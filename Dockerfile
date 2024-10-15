@@ -18,7 +18,7 @@ COPY lib lib
 RUN chmod +x gradlew
 
 # Build the application
-RUN ./gradlew build --no-daemon
+RUN ./gradlew build --no-daemon --scan
 
 # Use a smaller image for running the application
 FROM openjdk:11-jre
