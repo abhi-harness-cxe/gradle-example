@@ -12,6 +12,7 @@ COPY settings.gradle .
 
 # Copy the source code
 COPY src src
+COPY lib lib
 
 # Give execution rights to the Gradle wrapper
 RUN chmod +x gradlew
